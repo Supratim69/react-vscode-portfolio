@@ -1,6 +1,6 @@
 import {
-  FaMedium,
-  FaBlog,
+  FaInstagram,
+  FaTwitter,
   FaGithub,
   FaLinkedin,
   FaEnvelope,
@@ -9,32 +9,32 @@ import {
 export const links = [
   {
     index: 0,
-    title: "Find me on Github",
-    href: "https://github.com/noworneverev",
+    title: "Find us on Github",
+    href: "https://github.com/ACM-VIT",
     icon: <FaGithub />,
   },
   {
     index: 1,
-    title: "Find me on LinkedIn",
-    href: "https://www.linkedin.com/in/yan-ying-liao/",
+    title: "Find us on LinkedIn",
+    href: "https://www.linkedin.com/company/acmvit/mycompany/",
     icon: <FaLinkedin />,
   },
   {
     index: 2,
-    title: "Contact me via email",
-    href: "mailto:n9102125@gmail.com",
+    title: "Contact us via email",
+    href: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=outreach.acmvit@gmail.com",
     icon: <FaEnvelope />,
   },
   {
     index: 3,
-    title: "Find me on Medium",
-    href: "https://medium.com/@noworneverev",
-    icon: <FaMedium />,
+    title: "Find us on Instagram",
+    href: "https://www.instagram.com/acmvit/",
+    icon: <FaInstagram />,
   },
   {
     index: 4,
-    title: "Find me on Blog",
-    href: "https://noworneverev.github.io/blog/",
-    icon: <FaBlog />,
+    title: "Find us on Twitter",
+    href: "https://twitter.com/ACM_VIT",
+    icon: <FaTwitter />,
   },
 ];
