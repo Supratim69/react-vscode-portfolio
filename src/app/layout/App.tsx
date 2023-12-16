@@ -19,6 +19,7 @@ import Home from "../pages/Home";
 import { pages } from "../pages/pages";
 import usePageTracking from "../hooks/usePageTracking";
 import { isBrowser } from "react-device-detect";
+import path from "path";
 
 interface Page {
   index: number;
@@ -197,6 +198,7 @@ export default function App() {
                 }}
               >
                 <Routes>
+                  
                   <Route
                     path="/"
                     element={<Home setSelectedIndex={setSelectedIndex} />}

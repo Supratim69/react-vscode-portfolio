@@ -112,6 +112,40 @@ export default function AppTree({
           />
         ))}
       </TreeItem>
+      <TreeItem
+        nodeId="-1"
+        label="Trial"
+        color="#bdc3cf"
+        onClick={() => {
+          navigate('/');
+          setSelectedIndex(-1);
+        }}
+      >
+        {pages.map(({ index, name, route }) => (
+          <TreeItem
+            key={index}
+            nodeId={index.toString()}
+            label={name}
+            sx={{
+              color: renderTreeItemColor(index),
+              backgroundColor: renderTreeItemBgColor(index),
+              "&& .Mui-selected": {
+                backgroundColor: renderTreeItemBgColor(index),
+              },
+            }}
+            icon={<VscMarkdown color="#6997d5" />}
+            onClick={() => {
+              if (!visiblePageIndexs.includes(index)) {
+                const newIndexs = [...visiblePageIndexs, index];
+                setVisiblePageIndexs(newIndexs);
+              }
+              navigate(route);
+              setSelectedIndex(index);
+              setCurrentComponent("tree");
+            }}
+          />
+        ))}
+      </TreeItem>
     </TreeView>
   );
 }

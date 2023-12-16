@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Link, Paper, Tooltip } from "@mui/material";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { VscFiles, VscSettingsGear } from "react-icons/vsc";
 import { BiGitBranch } from "react-icons/bi";
 import Divider from "@mui/material/Divider";
@@ -75,7 +76,7 @@ export default function Sidebar({
         <Tooltip title="Source of this project" arrow placement="right">
           <Link
             target="_blank"
-            href={"https://github.com/ACM-VIT"}
+            href={"https://github.com/Supratim69/react-vscode-portfolio"}
             underline="none"
             color="inherit"
             sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
@@ -138,6 +139,33 @@ export default function Sidebar({
         justifyContent="center"
         flexDirection="column"
       >
+        <Tooltip title="Profile Page" arrow placement="right">
+          <Link
+            onClick={()=>{}}
+            underline="none"
+            color="inherit"
+            sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
+          >
+            <Box
+              sx={{
+                flexGrow: 0,
+                fontSize: 24,
+                color: "#858585",
+                cursor: "pointer",
+                "&:hover": {
+                  color: "white",
+                },
+                WebkitTapHighlightColor: "rgba(0,0,0,0)",
+              }}
+              display="flex"
+              justifyContent="center"
+            >
+              <Box mt={0.7}>
+                <AccountCircleIcon/>
+              </Box>
+            </Box>
+          </Link>
+        </Tooltip>
         <Tooltip
           title={darkMode ? "Turn on the light" : "Turn off the light"}
           placement="right"

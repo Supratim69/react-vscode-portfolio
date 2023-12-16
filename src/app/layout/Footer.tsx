@@ -52,7 +52,7 @@ export default function Footer() {
             > */}
             <Box
               component={Link}
-              href="https://github.com/ACM-VIT"
+              href="https://github.com/Supratim69/react-vscode-portfolio"
               underline="none"
               color="white"
               target="_blank"
